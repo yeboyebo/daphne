@@ -11,3 +11,13 @@ from YBAQNEXT.yeboapps import *
 from .local import *
 
 INSTALLED_APPS += ('channels', )
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'asgi_rabbitmq.RabbitmqChannelLayer',
+        'ROUTING': 'AQNEXT.routing.channel_routing',
+        'CONFIG': {
+            'url': 'amqp://desarrollo:desarrollo@localhost:5672/desarrollo'
+        },
+    },
+}
