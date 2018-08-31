@@ -5,6 +5,18 @@
             {
                 "path": "config/",
                 "name": "dependencias.json"
+            },
+            {
+                "path": "AQNEXT/",
+                "name": "settings.py"
+            },
+            {
+                "path": "AQNEXT/",
+                "name": "routing.py"
+            },
+            {
+                "path": "AQNEXT/",
+                "name": "asgi.py"
             }
         ],
         "addFile": [],
